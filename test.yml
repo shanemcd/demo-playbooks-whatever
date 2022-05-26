@@ -1,0 +1,11 @@
+---
+- name: This is an optional playbook name
+  hosts: all
+  gather_facts: no
+  vars:
+    name: Alan!
+  tasks:
+    - name: Print a message
+      debug:
+        msg: |
+          Hello {{ name }}
